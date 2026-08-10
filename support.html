@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Health Data Export</title>
+  <meta name="description" content="Support contact and FAQ for Health Data Export, an iOS app that exports user-selected Apple Health data." />
+  <meta name="theme-color" content="#0f766e" />
+  <style>
+    :root {
+      --text: #1f2937;
+      --muted: #4b5563;
+      --accent: #0f766e;
+      --bg: #ffffff;
+      --border: #e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f3f4f6;
+        --muted: #d1d5db;
+        --accent: #5eead4;
+        --bg: #0b0f10;
+        --border: #1f2937;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+    h1 {
+      font-size: 32px;
+      line-height: 1.25;
+      margin: 0 0 8px;
+      letter-spacing: -0.01em;
+    }
+    h2 {
+      font-size: 20px;
+      line-height: 1.35;
+      margin: 32px 0 12px;
+      letter-spacing: -0.005em;
+    }
+    p { margin: 0 0 16px; color: var(--text); }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 32px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+    .email {
+      display: inline-block;
+      padding: 10px 16px;
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Support</h1>
+    <p class="meta">Health Data Export</p>
+
+    <p>
+      Health Data Export is a personal, no-account, on-device utility. The fastest way to
+      get help is to email the developer directly. Please include your iOS version, your
+      iPhone model, and a short description of what you were trying to do.
+    </p>
+
+    <p>
+      <a class="email" href="mailto:zhzqiang2012@gmail.com">zhzqiang2012@gmail.com</a>
+    </p>
+
+    <h2>Common Questions</h2>
+    <p>
+      <strong>Where do my exports go?</strong><br />
+      Wherever you point the document picker — a local folder in Files, an iCloud Drive folder,
+      or a third-party Files provider. The app never uploads to a developer server.
+    </p>
+    <p>
+      <strong>Why does the app ask for Health permission?</strong><br />
+      To read the categories you explicitly select. The app requests read-only access and
+      passes an empty write set to HealthKit.
+    </p>
+    <p>
+      <strong>Will background export run on time?</strong><br />
+      iOS controls background execution. The app makes a best-effort request and resumes
+      pending work whenever conditions allow. Locked devices and protected Health data may
+      delay exports; this is by design.
+    </p>
+    <p>
+      <strong>What happens to my exports if I delete the app?</strong><br />
+      Files already saved outside the app stay where you put them. Removing the app only
+      clears its own preferences and local staging; your Apple Health data is untouched.
+    </p>
+
+    <hr />
+
+    <footer>
+      <p>
+        <a href="./">Privacy Policy</a>
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
