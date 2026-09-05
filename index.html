@@ -86,7 +86,7 @@
 <body>
   <main>
     <h1>Privacy Policy</h1>
-    <p class="meta">Health Data Export &middot; Last updated 2026-08-10</p>
+    <p class="meta">Health Data Export &middot; Last updated 2026-09-05</p>
 
     <p>
       Health Data Export processes Apple Health data on the user's iPhone solely to create
@@ -106,8 +106,12 @@
     <p>
       The app stores preferences, random collection and installation identifiers, checkpoints,
       and health-value-free diagnostic records locally or inside the selected export collection.
-      Users can delete exported files by date range without affecting Apple Health. Removing
-      the app does not remove files already saved outside its container.
+      It also keeps a protected, rebuildable on-device cache of HealthKit source records and
+      derived summaries. The cache and temporary report workspace are marked for exclusion from
+      device backup.
+      Completed report ZIP files expire after 24 hours and are normally removed as soon as sharing
+      is dismissed. Removing the app removes its private cache and temporary reports but does not
+      remove files already saved outside its container.
     </p>
 
     <p>
@@ -122,6 +126,7 @@
       <li>Local preferences such as your selected categories, schedule, and chosen folder bookmark.</li>
       <li>A random installation identifier and a random collection identifier for takeover logic.</li>
       <li>SHA-256 manifest checksums and anchors written next to your export files.</li>
+      <li>A protected on-device cache used to prepare summaries and retry interrupted delivery.</li>
     </ul>
 
     <h2>Data the App Does Not Collect</h2>
@@ -136,7 +141,8 @@
     <ul>
       <li>Choose which categories to read, and change the selection at any time.</li>
       <li>Choose the destination folder, and revoke the folder bookmark at any time.</li>
-      <li>Delete exported files by date range without affecting Apple Health.</li>
+      <li>Clear the protected local export cache without affecting Apple Health or delivered files.</li>
+      <li>Delete exported files directly from the destination you selected.</li>
       <li>Remove the app to stop future exports. Files already saved outside the app remain where you put them.</li>
     </ul>
 
